@@ -6,7 +6,7 @@ import { LiaSignInAltSolid } from "react-icons/lia";
 const Header = () => {
   return (
     <div className="whole-header">
-      <div className="container flex-container">
+      <div className="container1 flex-container">
         <header className="d-flex justify-content-between align-items-center py-3 fixed-top nav-color">
           <div className="navbar-wrapper d-flex align-items-center">
             <ul className="nav nav-pills align-items-center">
