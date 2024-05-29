@@ -1,33 +1,81 @@
+import React from "react";
+
+function SvgO() {
+  return (
+    <svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      width="10" // Adjust the width as needed
+      height="10" // Adjust the height as needed
+      viewBox="0 0 512 512"
+      style={{ width: "1em", height: "1em", verticalAlign: "middle" }}
+    >
+      <defs>
+        <style>
+          {`.cls-1 {
+            fill: #7a3f89;
+          }
+          .cls-1, .cls-2 {
+            stroke-width: 0px;
+          }
+          .cls-2 {
+            fill: #fff;
+          }`}
+        </style>
+      </defs>
+      <circle
+        className="cls-1"
+        cx="256"
+        cy="256"
+        r="251.5"
+        transform="translate(-106.04 256) rotate(-45)"
+      ></circle>
+      <path
+        className="cls-2"
+        d="m256,58.66c-108.82,0-197.34,88.53-197.34,197.34,0,31.45,7.18,61.51,21.35,89.37,2.85,5.6,9.7,7.84,15.3,4.98,5.61-2.85,7.84-9.7,4.98-15.3-12.52-24.63-18.87-51.22-18.87-79.05,0-96.27,78.32-174.58,174.58-174.58s174.58,78.32,174.58,174.58-78.32,174.58-174.58,174.58c-36.46,0-73.39-12.58-103.31-33.66l.03-.03-9.17-6.85c-1.11-.9-2.21-1.8-3.3-2.72-.72-1.13-1.15-2.58-1.12-4.04.01-.71.17-2.48,1.23-3.42l35.32-30.4c10.19,6.58,21.49,10.38,33.6,11.29,1.93.14,3.84.22,5.7.22.61,0,1.21,0,1.81-.02,16.58-.34,33.21-5.58,50.84-16.01,14.93-8.84,29.19-20.41,44.86-36.41,13.92-14.22,24.52-27.92,32.41-41.88,6.6-11.68,10.76-22.78,12.73-33.93,4.23-23.84-1.16-44.69-16.03-61.97h0c-3.32-3.86-6.96-7.28-10.16-10.29l-3.58-3.4c-2.57-2.49-5.33-3.89-8.69-5.24l-1.84-.71c-1.79-.39-5.2-.88-6.69-.57l-2.02.44c-9.25,2.04-15.17,7.96-19.75,13.49-5.24,6.33-10.73,13.28-15.4,21.22-2.17,3.68-5.15,9.39-5.9,16.32-.89,8.08,1.52,15.59,6.98,21.72,1.48,1.66,3.25,3.32,5.45,5.38,2.16,2.02,4.84,4.53,7.29,7.27,1.18,1.33,1.69,3.06,1.54,5.13-.04.57-.27,2.65-1.17,5.47l-.23.71c-.08.28-.17.56-.31.87-2.92,6.57-6.41,10.63-11.4,16.08-8.93,9.74-16.35,16.45-24.06,21.77-.69.48-1.33.88-1.96,1.28l-.46.29c-10.05,6.27-15.27,2.03-16.05,1.29-2.74-3.23-5.63-6.38-9.09-9.9-3.92-3.98-9.5-8.69-17.98-9.82-5.37-.69-10.8.1-16.64,2.48-6.54,2.67-12.23,6.6-17.4,10.44l-2.02,1.5c-5.12,3.78-10.91,8.06-15.7,13.69-7.65,9.02-8.54,19.17-2.89,28.07.56.88,1.18,1.75,1.87,2.6l-.1.06,5.49,6.36-32.92,28.33c-5.5,4.82-8.73,12.03-8.87,19.78-.13,7.26,2.46,14.46,7.11,19.77l9.81,8.31v.08c.38.31.78.61,1.17.91l1.23,1.04.05-.05c34.21,26.21,75.85,40.41,119.69,40.41,108.82,0,197.34-88.53,197.34-197.35S364.82,58.66,256,58.66Zm-88.5,252.7c.26-.39.63-.92,1.16-1.55,3.42-4.02,7.87-7.29,12.59-10.77l2.04-1.51c4.81-3.58,8.91-6.32,13.28-8.11,2.2-.9,4.08-1.33,5.82-1.33.41,0,.81.02,1.21.07,2.3.31,4.37,1.58,7.14,4.41,3.6,3.65,6.46,6.76,8.99,9.81,5.71,6.86,13.49,9.77,22.45,8.38,8.21-1.25,14.8-5.2,20.15-8.9,8.92-6.16,17.31-13.72,27.21-24.53,5.68-6.2,12.03-13.77,16.12-22.97,6.02-13.55,3.44-25.17-7.46-33.61-3.53-2.74-6.82-6.33-9.63-9.49-1.92-2.15-2.66-4.43-2.35-7.21.28-2.57,1.33-5.3,3.43-8.85,3.98-6.78,8.93-13.02,13.68-18.76,1.78-2.15,3.3-3.69,4.75-4.8.47-.36,4.66-3.4,6.11-1.69l2.21,2.58.15-.34,2.06,1.97c3.19,3.01,6.2,5.85,8.76,8.83,11.17,12.98,15.03,28.18,11.79,46.45l2.1.38-2.1-.37c-1.61,9.04-5.07,18.2-10.6,27.98-7.19,12.7-16.55,24.77-29.47,37.98-14.52,14.81-27.55,25.42-41.02,33.39-14.99,8.86-28.23,13.12-41.67,13.4h-1.34c-11.05.01-20.8-2.9-29.83-8.89-4.7-3.12-8.86-7.57-12.89-11.88-1.29-1.39-2.38-2.53-3.4-3.58-2.96-3.36-1.92-5.7-1.45-6.47Z"
+      ></path>
+    </svg>
+  );
+}
+
 function HomePage1() {
   return (
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="bootstrap-themes.png"
-            class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width="700"
-            height="500"
-            loading="lazy"
-          />
+    <div
+      className="col-xxl-8 px-4 py-5"
+      style={{
+        marginTop: "60px",
+        backgroundColor: "rgb(17, 2, 33)",
+        width: "100%",
+      }}  
+    >
+      <div className="main-page  wow fadeInRight animated animated row flex-lg-row-reverse align-items-center g-5 py-5 ">
+        <div className="col-10 col-sm-8 col-lg-6 ">
+          <img src="https://salescaller.io/website_assets/images/misc/bannerSlider.png" alt="" style={{height:"510px",width:"340px",marginLeft:"100px"}}/>
         </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Responsive left-aligned hero with image
+        <div className="col-lg-6 ">
+          <h1 className="heading-main ">Telecalling</h1>
+
+          <h1 className="heading-main ">& Sales Agent</h1>
+          <h1
+            className="heading-main"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            Tracking S<SvgO />
+            ftware
           </h1>
-          <p class="lead">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
+          <p
+            className="lead"
+            style={{ color: "white", fontSize: "1.5rem !important" }}
+          >
+            For all your business communication needs
           </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
+          <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" className="btn-clr1">
+              Get Started Now
             </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
+            <button type="button" className="btn-clr1">
+              <img src="https://img.icons8.com/?size=100&id=22988&format=png&color=000000" alt="gp" style={{height:"23px",width:"23px"}} />Google Play
             </button>
           </div>
         </div>
@@ -35,4 +83,5 @@ function HomePage1() {
     </div>
   );
 }
+
 export default HomePage1;
